@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import './Techonology.css'
-import ReactTyped from 'react-typed'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
+import './Techonology.css'
 
 const Technology = () => {
   const [activeTech, setActiveTech] = useState('launch vehicle')
@@ -16,8 +16,6 @@ const Technology = () => {
     }
     getData()
   }, [])
-
-  console.log(technologies)
 
   return (
     <div className="technology w-screen h-screen flex flex-col items-center justify-start overflow-y-auto">
@@ -111,11 +109,11 @@ const Technology = () => {
                 {/* DETAILS DIV */}
                 <div className="lg:w-[444px]">
                   <p className="text-bodyText text-customBlue text-[15px] text-center leading-[25px] px-[6px] md:text-[16px] md:leading-[28px] lg:text-[18px] lg:leading-[32px] lg:text-left lg:p-[7px] lg:min-h-[174px]">
-                    <ReactTyped
-                      strings={[`${item.description}`]}
-                      typeSpeed={30}
-                      cursorChar="|"
-                      showCursor={false}
+                    <TypeAnimation
+                      sequence={item.description}
+                      speed={50}
+                      repeat={0}
+                      cursor={false}
                     />
                   </p>
                 </div>

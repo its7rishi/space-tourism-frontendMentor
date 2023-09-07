@@ -2,7 +2,7 @@ import closeBtn from '../assets/shared/icon-close.svg'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-const SideMenu = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
+const SideMenu = ({ isOpen, setIsOpen, setActiveTab }) => {
   const handleClick = (page) => {
     setActiveTab(page)
     setIsOpen(false)
@@ -35,9 +35,7 @@ const SideMenu = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
         {/* SIDE MENU */}
         <ul className="mt-[6rem] ml-[2rem] flex flex-col justify-start gap-8">
           <li
-            className={`navText cursor-pointer ${
-              activeTab === 'home' ? 'underline underline-offset-[15px]' : ''
-            } hover:underline hover:underline-offset-[15px]`}
+            className="navText cursor-pointer hover:underline hover:underline-offset-[15px]"
             onClick={() => handleClick('home')}
           >
             <Link to="/">
@@ -46,11 +44,7 @@ const SideMenu = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
             </Link>
           </li>
           <li
-            className={`navText cursor-pointer${
-              activeTab === 'destination'
-                ? 'underline underline-offset-[15px]'
-                : ''
-            } hover:underline hover:underline-offset-[15px]`}
+            className="navText cursor-pointer hover:underline hover:underline-offset-[15px]"
             onClick={() => handleClick('destination')}
           >
             <Link to="/destinations">
@@ -59,9 +53,7 @@ const SideMenu = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
             </Link>
           </li>
           <li
-            className="navText cursor-pointer${
-              activeTab === 'crew' ? 'underline underline-offset-[15px]' : ''
-            } hover:underline hover:underline-offset-[15px]"
+            className="navText cursor-pointer hover:underline hover:underline-offset-[15px]"
             onClick={() => handleClick('crew')}
           >
             <Link to="/crew">
@@ -70,9 +62,7 @@ const SideMenu = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
             </Link>
           </li>
           <li
-            className="navText cursor-pointer${
-              activeTab === 'technology' ? 'underline underline-offset-[15px]' : ''
-            } hover:underline hover:underline-offset-[15px]"
+            className="navText cursor-pointer hover:underline hover:underline-offset-[15px]"
             onClick={() => handleClick('technology')}
           >
             <Link to="/technology">

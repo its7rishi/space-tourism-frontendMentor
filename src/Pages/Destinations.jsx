@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import './Destinations.css'
-import ReactTyped from 'react-typed'
+import { TypeAnimation } from 'react-type-animation'
 
 const Destinations = () => {
   const [activeCard, setActiveCard] = useState('moon')
@@ -102,11 +102,11 @@ const Destinations = () => {
 
               {/* CARD DESCRIPTION */}
               <p className="font-bodyText text-customBlue text-[15px] text-center leading-[25px] min-h-[118px] max-w-[327px] md:text-[18px] md:leading-[28px] md:min-w-[573px] lg:leading-[32px] lg:max-w-[444px] lg:text-left lg:min-h-[128px]">
-                <ReactTyped
-                  strings={[`${item.description}`]}
-                  typeSpeed={30}
-                  cursorChar={'|'}
-                  showCursor={false}
+                <TypeAnimation
+                  sequence={item.description}
+                  speed={50}
+                  repeat={0}
+                  cursor={false}
                 />
               </p>
 

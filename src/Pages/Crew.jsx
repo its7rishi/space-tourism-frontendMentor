@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Crew.css'
-import ReactTyped from 'react-typed'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 
 const Crew = () => {
   const [crews, setCrews] = useState([])
@@ -104,11 +104,11 @@ const Crew = () => {
                 </h1>
                 {/* DESCRIPTION */}
                 <p className=" mt-4 text-bodyText text-customBlue text=[16px[ leading-[25px] text-center w-[327px] px-6 md:leading-[28px] md:w-[458px] md:px-12 lg:text-left lg:px-0 lg:pr-36 lg:text-[18px] lg:leading-[32px]">
-                  <ReactTyped
-                    strings={[`${item.bio}`]}
-                    typeSpeed={30}
-                    cursorChar="|"
-                    showCursor={false}
+                  <TypeAnimation
+                    sequence={item.bio}
+                    speed={50}
+                    repeat={0}
+                    cursor={false}
                   />
                 </p>
               </div>

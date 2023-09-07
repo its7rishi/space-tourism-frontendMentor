@@ -1,17 +1,10 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import ReactTyped from 'react-typed'
+import { TypeAnimation } from 'react-type-animation'
 
 const Home = ({ setActiveTab }) => {
-  // const navigate = useNavigate()
-
   const descText =
     "Let's face it; if you want to go to space, you might as well genuinely go to the outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience"
-
-  /* 'Let&apos;s face it&semi; if you want to go to space, you might as
-  well genuinely go to outer space and not hover kind of on the edge of
-  it. Well sit back, and relax because we&apos;ll give you a truly out
-  of this world experience!'` */
 
   const handleClick = () => {
     setActiveTab('destinations')
@@ -26,11 +19,11 @@ const Home = ({ setActiveTab }) => {
           SPACE
         </h1>
         <p className="paraText text-[15px] min-h-[118px] text-center text-customBlue leading-[25px] md:text-[16px] md:leading-[28px] lg:text-left lg:text-[18px] lg:leading-[32px] lg:px-7 lg:min-h-[118px]">
-          <ReactTyped
-            strings={[`${descText}`]}
-            typeSpeed={30}
-            cursorChar="|"
-            showCursor={false}
+          <TypeAnimation
+            sequence={descText}
+            speed={50}
+            repeat={0}
+            cursor={false}
           />
         </p>
       </div>
