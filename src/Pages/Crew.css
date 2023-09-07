@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+  .crew {
+    background: url('src/assets/crew/background-crew-mobile.jpg') no-repeat
+      center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .crew {
+    background: url('src/assets/crew/background-crew-tablet.jpg') no-repeat
+      center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .crew {
+    background: url('src/assets/crew/background-crew-desktop.jpg') no-repeat
+      center;
+    background-size: cover;
+  }
+}

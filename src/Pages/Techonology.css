@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+  .technology {
+    background: url('src/assets/technology/background-technology-mobile.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 600px) {
+  .technology {
+    background: url('src/assets/technology/background-technology-tablet.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 922px) {
+  .technology {
+    background: url('src/assets/technology/background-technology-desktop.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
+}
