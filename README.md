@@ -20,7 +20,7 @@ A space tourism website created for the frontend mentor challenge
 ##### Animations
 
 - **Framer Motion**
-- **React-Type**
+- **React-Type-Animation**
 
 To run this project, clone or download it on your machine. Open int on your editor and run
 
