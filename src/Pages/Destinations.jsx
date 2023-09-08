@@ -8,8 +8,8 @@ const Destinations = () => {
   const [destinations, setDestinations] = useState([])
 
   useEffect(() => {
-    const getData = () => {
-      fetch('/src/data.json')
+    const getData = async () => {
+      await fetch('data.json')
         .then((res) => res.json())
         .then((data) => setDestinations(data.destinations))
         .catch((e) => console.error(e))

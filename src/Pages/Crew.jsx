@@ -8,8 +8,8 @@ const Crew = () => {
   const [activeCrew, setActiveCrew] = useState('douglas hurley')
 
   useEffect(() => {
-    const getData = () => {
-      fetch('/src/data.json')
+    const getData = async () => {
+      await fetch('data.json')
         .then((res) => res.json())
         .then((data) => setCrews(data.crew))
         .catch((e) => console.error(e))

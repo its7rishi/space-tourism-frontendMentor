@@ -8,8 +8,8 @@ const Technology = () => {
   const [technologies, setTechnologies] = useState([])
 
   useEffect(() => {
-    const getData = () => {
-      fetch('/src/data.json')
+    const getData = async () => {
+      await fetch('data.json')
         .then((res) => res.json())
         .then((data) => setTechnologies(data.technology))
         .catch((e) => console.error(e))
