@@ -35,10 +35,9 @@ const Crew = () => {
             {/* IMAGE DIV */}
             <div className="flex justify-center items-center mx-auto mt-8 border-b-[0.5px] border-b-gray-500 md:border-none  ">
               <img
-                src={item.images.png}
+                src={item.images.webp}
                 alt={item.name}
-                width="100%"
-                className=" object-center h-[177.12px] mx-auto md-[456.37px] md:h-[572px] lg:w=[568.07px] lg:h-[712px]"
+                className=" object-center w-[177.12px] h-[222px] mx-auto md:w-full md:h-[572px] lg:w-[568.07px] lg:h-[712px]"
               />
             </div>
             {/* DETAILS DIV */}

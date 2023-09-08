@@ -32,7 +32,7 @@ const Destinations = () => {
             key={item.name}
           >
             <img
-              src={item.images['png']}
+              src={item.images['webp']}
               alt={item.name.toLowerCase()}
               className="w-[170px] h-[170px] mt-6 md:w-[300px] md:h-[300px] lg:w-[322px]"
             />
