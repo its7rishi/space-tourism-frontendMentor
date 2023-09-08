@@ -38,7 +38,7 @@ const Crew = () => {
                 src={item.images.png}
                 alt={item.name}
                 width="100%"
-                className=" object-center h-[177.12px] w-full mx-auto md-[456.37px] md:h-[572px] lg:w=[568.07px] lg:h-[712px]"
+                className=" object-center h-[177.12px] mx-auto md-[456.37px] md:h-[572px] lg:w=[568.07px] lg:h-[712px]"
               />
             </div>
             {/* DETAILS DIV */}

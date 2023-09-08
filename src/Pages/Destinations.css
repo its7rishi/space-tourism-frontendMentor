@@ -1,6 +1,7 @@
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .destination {
-    background: url('assets/destination/background-destination-desktop.jpg');
+    background: url('assets/destination/background-destination-mobile.jpg')
+      no-repeat center;
     background-size: cover;
   }
 }
