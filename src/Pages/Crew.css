@@ -1,6 +1,6 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .crew {
-    background: url('assets/crew/background-crew-mobile.jpg') no-repeat center;
+    background: url('assets/crew/background-crew-mobile.jpb') no-repeat center;
     background-size: cover;
   }
 }
