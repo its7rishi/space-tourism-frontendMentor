@@ -20,18 +20,21 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    background: url('assets//home/background-home-tablet.jpg') no-repeat center;
-    background-size: cover;
-  }
+.destination {
+  background: url('assets/destination/background-destination-mobile.jpg')
+    no-repeat center;
+  background-size: cover;
 }
 
-@media screen and (min-width: 922px) {
-  body {
-    background: url('assets//home/background-home-desktop.jpg') no-repeat center;
-    background-size: cover;
-  }
+.crew {
+  background: url('assets/crew/background-crew-mobile.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.technology {
+  background: url('assets/technology/background-technology-mobile.jpg')
+    no-repeat center;
+  background-size: cover;
 }
 
 .heading1 {
@@ -99,4 +102,52 @@ body {
   font-weight: 200;
   line-height: 32px;
   color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: url('assets//home/background-home-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .destination {
+    background: url('assets/destination/background-destination-tablet.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
+
+  .crew {
+    background: url('assets/crew/background-crew-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .technology {
+    background: url(assets/technology/background-technology-tablet.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  body {
+    background: url('assets//home/background-home-desktop.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .destination {
+    background: url('assets/destination/background-destination-desktop.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
+
+  .crew {
+    background: url(assets/crew/background-crew-desktop.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .technology {
+    background: url('assets/technology/background-technology-desktop.jpg')
+      no-repeat center;
+    background-size: cover;
+  }
 }

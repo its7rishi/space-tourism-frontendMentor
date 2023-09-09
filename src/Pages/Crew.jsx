@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './Crew.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 

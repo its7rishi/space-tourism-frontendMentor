@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import './Techonology.css'
 
 const Technology = () => {
   const [activeTech, setActiveTech] = useState('launch vehicle')

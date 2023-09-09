@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import './Destinations.css'
 import { TypeAnimation } from 'react-type-animation'
 
 const Destinations = () => {
